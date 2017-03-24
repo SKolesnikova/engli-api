@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: engli-api_development
+  pool: 5
+  timeout: 5000
+  username: edge
+  password: edge
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: engli-api_test
+  pool: 5
+  timeout: 5000
+  username: edge
+  password: edge

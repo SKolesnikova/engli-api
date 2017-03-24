@@ -16,6 +16,7 @@
       end
 
       def show
+        render json: @phrase = Phrase.find(params[:id])
       end
 
       def destroy
@@ -25,7 +26,7 @@
 
       private
       def set_phrases
-      @phrase = Phrases.find(params[:id])
+      @phrase = Phrase.find(params[:id])
       end
 
       def phrases_params

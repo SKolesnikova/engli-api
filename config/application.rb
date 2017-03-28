@@ -27,4 +27,6 @@ module EngliApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
   end
+
+
 end

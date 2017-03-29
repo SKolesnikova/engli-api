@@ -3,7 +3,8 @@
       before_action :set_phrases, only: [:show, :destroy]
 
       def index
-        render json: Phrase.all
+        @phrases = Phrase.all
+        render json: @phrases, status: 200
       end
 
       def create

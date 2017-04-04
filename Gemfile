@@ -5,14 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 gem 'rails', '~> 5.0.2'
 # Remove gem 'sqlite3'
 gem 'puma', '~> 3.0'
-gem 'rack-cors'
+gem 'rack-cors', :require => 'rack/cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'pg'
 gem 'devise'
+gem 'simple_token_authentication', '~> 1.0'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
